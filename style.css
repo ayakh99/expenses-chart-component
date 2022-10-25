@@ -86,14 +86,16 @@ a {
   gap: 2rem;
 }
 
-.container > * {
+.header {
+  background-color: var(--red);
+  color: var(--orange);
   padding: var(--main-padding);
   border-radius: 1.5rem;
 }
 
-.header {
-  background-color: var(--red);
-  color: var(--orange);
+.stats {
+  padding: var(--main-padding);
+  border-radius: 1.5rem;
 }
 
 .title {

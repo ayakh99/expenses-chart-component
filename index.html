@@ -14,7 +14,7 @@
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
-    <article class="container column">
+    <div class="container column">
       <header class="header row">
         <div class="column">
           <h1 class="title">My balance</h1>
@@ -22,62 +22,68 @@
         </div>
         <img src="./images/logo.svg" alt="Logo" class="logo" />
       </header>
-      <div class="stats">
-        <h1 class="title--graph bold brown">Spending - Last 7 days</h1>
-        <div class="graph">
-          <div class="bars">
-            <div class="bar" id="mon">
-              <span class="amount"></span>
+
+      <main>
+        <div class="stats">
+          <h1 class="title--graph bold brown">Spending - Last 7 days</h1>
+          <div class="graph">
+            <div class="bars">
+              <div class="bar" id="mon">
+                <span class="amount"></span>
+              </div>
+              <div class="bar" id="tue">
+                <span class="amount"></span>
+              </div>
+              <div class="bar" id="wed">
+                <span class="amount"></span>
+              </div>
+              <div class="bar" id="thu">
+                <span class="amount"></span>
+              </div>
+              <div class="bar" id="fri">
+                <span class="amount"></span>
+              </div>
+              <div class="bar" id="sat">
+                <span class="amount"></span>
+              </div>
+              <div class="bar" id="sun">
+                <span class="amount"></span>
+              </div>
             </div>
-            <div class="bar" id="tue">
-              <span class="amount"></span>
-            </div>
-            <div class="bar" id="wed">
-              <span class="amount"></span>
-            </div>
-            <div class="bar" id="thu">
-              <span class="amount"></span>
-            </div>
-            <div class="bar" id="fri">
-              <span class="amount"></span>
-            </div>
-            <div class="bar" id="sat">
-              <span class="amount"></span>
-            </div>
-            <div class="bar" id="sun">
-              <span class="amount"></span>
+            <div class="days">
+              <span class="day">mon</span>
+              <span class="day">tue</span>
+              <span class="day">wed</span>
+              <span class="day">thu</span>
+              <span class="day">fri</span>
+              <span class="day">sat</span>
+              <span class="day">sun</span>
             </div>
           </div>
-          <div class="days">
-            <span class="day">mon</span>
-            <span class="day">tue</span>
-            <span class="day">wed</span>
-            <span class="day">thu</span>
-            <span class="day">fri</span>
-            <span class="day">sat</span>
-            <span class="day">sun</span>
+
+          <div class="details">
+            <h2 class="title">Total this month</h2>
+            <div class="row">
+              <span class="balance balance--total bold brown">$478.33</span>
+
+              <div class="column flex-end">
+                <span class="bold brown">+2.4%</span>
+                <span>from last month</span>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="details">
-          <h2 class="title">Total this month</h2>
-          <div class="row">
-            <span class="balance balance--total bold brown">$478.33</span>
-
-            <div class="column flex-end">
-              <span class="bold brown">+2.4%</span>
-              <span>from last month</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/ayakh99">ayakh99</a>.
+      </main>
     </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/ayakh99">ayakh99</a>.
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
